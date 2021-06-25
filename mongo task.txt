@@ -1,0 +1,241 @@
+> db.films.insertOne({
+...         "name" : "Chennai Express",
+...         "language" : "Hindi",
+...         "year" : 2013,
+...         "stats" : {
+...             "budget" : 115,
+...             "BoxOfficeCollection" : 423
+...         },
+...         "cast" : [
+...             {
+...                 "actor" : "Shahrukh Khan",
+...                 "role" : "Rahul"
+...             },
+...             {
+...                 "actor" : "Deepika Padukone",
+...                 "role" : "Meenama Lochini Azhagusundaram"
+...             }
+...         ]
+...     })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("60d557a57459ab576f3280e6")
+}
+> db.films.insertOne({
+...         "name" : "De Dana Dan",
+...         "language" : "Hindi",
+...         "year" : 2009,
+...         "stats" : {
+...             "budget" : 60,
+...             "BoxOfficeCollection" : 78
+...         },
+...         "cast" : [
+...             {
+...                 "actor" : "Akshay Kumar",
+...                 "role" : "Neetin Bankar"
+...             },
+...             {
+...                 "actor" : "Sunil Shetty",
+...                 "role" : "Ram Mishra"
+...             },
+...             {
+...                 "actor" : "Katrina Kaif",
+...                 "role" : "Anjali Kakkad"
+...             }
+...         ]
+...     })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("60d557d27459ab576f3280e7")
+}
+> db.films.insertOne({
+...         "name" : "1920",
+...         "language" : "Hindi",
+...         "year" : 2008,
+...         "stats" : {
+...             "budget" : 7,
+...             "BoxOfficeCollection" : 14.5
+...         },
+...         "cast" : [
+...             {
+...                 "actor" : "Ranjish Doogal",
+...                 "role" : "Arjun Singh Rathod"
+...             },
+...             {
+...                 "actor" : "Adah Sharma",
+...                 "role" : "Anjori Alagh"
+...             }
+...         ]
+...     })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("60d557ef7459ab576f3280e8")
+}
+> db.films.insertOne({
+...         "name" : "Kuch Kuch Hota Hai",
+...         "language" : "Hindi",
+...         "year" : 1998,
+...         "stats" : {
+...             "budget" : 40,
+...             "BoxOfficeCollection" : 107
+...         },
+...         "cast" : [
+...             {
+...                 "actor" : "Shahrukh Khan",
+...                 "role" : "Rahul Khanna"
+...             },
+...             {
+...                 "actor" : "Kajol",
+...                 "role" : "Anjali Sharma"
+...             },
+...             {
+...                 "actor" : "Rani Mukerjee",
+...                 "role" : "Tina Khanna"
+...             }
+...         ]
+...     })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("60d558037459ab576f3280e9")
+}
+> db.films.insertOne({
+...         "name" : "Krish",
+...         "language" : "Hindi",
+...         "year" : 2006,
+...         "stats" : {
+...             "budget" : 40,
+...             "BoxOfficeCollection" : 126
+...         },
+...         "cast" : [
+...             {
+...                 "actor" : "Hritik Roshan",
+...                 "role" : "Krishna Mehra"
+...             },
+...             {
+...                 "actor" : "Priyanka Chopra",
+...                 "role" : "RPriya Kalliyanan"
+...             },
+...             {
+...                 "actor" : "Nasir Uddin Shah",
+...                 "role" : "Dr. Arya"
+...             }
+...         ]
+...     })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("60d5581c7459ab576f3280ea")
+}
+> db.films.find().pretty()
+{
+        "_id" : ObjectId("60d557a57459ab576f3280e6"),
+        "name" : "Chennai Express",
+        "language" : "Hindi",
+        "year" : 2013,
+        "stats" : {
+                "budget" : 115,
+                "BoxOfficeCollection" : 423
+        },
+        "cast" : [
+                {
+                        "actor" : "Shahrukh Khan",
+                        "role" : "Rahul"
+                },
+                {
+                        "actor" : "Deepika Padukone",
+                        "role" : "Meenama Lochini Azhagusundaram"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d557d27459ab576f3280e7"),
+        "name" : "De Dana Dan",
+        "language" : "Hindi",
+        "year" : 2009,
+        "stats" : {
+                "budget" : 60,
+                "BoxOfficeCollection" : 78
+        },
+        "cast" : [
+                {
+                        "actor" : "Akshay Kumar",
+                        "role" : "Neetin Bankar"
+                },
+                {
+                        "actor" : "Sunil Shetty",
+                        "role" : "Ram Mishra"
+                },
+                {
+                        "actor" : "Katrina Kaif",
+                        "role" : "Anjali Kakkad"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d557ef7459ab576f3280e8"),
+        "name" : "1920",
+        "language" : "Hindi",
+        "year" : 2008,
+        "stats" : {
+                "budget" : 7,
+                "BoxOfficeCollection" : 14.5
+        },
+        "cast" : [
+                {
+                        "actor" : "Ranjish Doogal",
+                        "role" : "Arjun Singh Rathod"
+                },
+                {
+                        "actor" : "Adah Sharma",
+                        "role" : "Anjori Alagh"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d558037459ab576f3280e9"),
+        "name" : "Kuch Kuch Hota Hai",
+        "language" : "Hindi",
+        "year" : 1998,
+        "stats" : {
+                "budget" : 40,
+                "BoxOfficeCollection" : 107
+        },
+        "cast" : [
+                {
+                        "actor" : "Shahrukh Khan",
+                        "role" : "Rahul Khanna"
+                },
+                {
+                        "actor" : "Kajol",
+                        "role" : "Anjali Sharma"
+                },
+                {
+                        "actor" : "Rani Mukerjee",
+                        "role" : "Tina Khanna"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d5581c7459ab576f3280ea"),
+        "name" : "Krish",
+        "language" : "Hindi",
+        "year" : 2006,
+        "stats" : {
+                "budget" : 40,
+                "BoxOfficeCollection" : 126
+        },
+        "cast" : [
+                {
+                        "actor" : "Hritik Roshan",
+                        "role" : "Krishna Mehra"
+                },
+                {
+                        "actor" : "Priyanka Chopra",
+                        "role" : "RPriya Kalliyanan"
+                },
+                {
+                        "actor" : "Nasir Uddin Shah",
+                        "role" : "Dr. Arya"
+                }
+        ]
+}
+>
