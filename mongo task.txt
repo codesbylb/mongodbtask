@@ -1,0 +1,557 @@
+> db.films.insertMany([
+...     {
+...         "name" : "Chennai Express",
+...         "language" : "Hindi",
+...         "year" : 2013,
+...         "stats" : {
+...             "budget" : 115,
+...             "BoxOfficeCollection" : 423
+...         },
+...         "genre":["action","comic","romance"],
+...         "media":[
+...             {
+...                 "type" : "image",
+...                 "url" : "http://image1.com/"
+...             },
+...             {
+...                 "type" : "video",
+...                 "url" : "http://video1.com/"
+...             }
+...
+...         ],
+...         "cast" : [
+...             {
+...                 "actor" : "Shahrukh Khan",
+...                 "role" : "hero",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Rahul"
+...             },
+...             {
+...                 "actor" : "Deepika Padukone",
+...                 "role" : "heroine",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Meenama Lochini Azhagusundaram"
+...             }
+...         ],
+...         "review":[
+...             {
+...                 "username" : "user1",
+...                 "review_given" : "Excellent"
+...             },
+...             {
+...                 "username" : "user2",
+...                 "review_given" : "Good"
+...             }
+...         ]
+...     },
+...     {
+...         "name" : "De Dana Dan",
+...         "language" : "Hindi",
+...         "year" : 2009,
+...         "stats" : {
+...             "budget" : 60,
+...             "BoxOfficeCollection" : 78
+...         },
+...         "genre":["comic"],
+...         "media":[
+...             {
+...                 "type" : "image",
+...                 "url" : "http://image2.com/"
+...             },
+...             {
+...                 "type" : "video",
+...                 "url" : "http://video2.com/"
+...             }
+...
+...         ],
+...         "cast" : [
+...             {
+...                 "actor" : "Akshay Kumar",
+...                 "role" : "hero",
+...                 "skill" : ["Actor","Dancer","comedian"],
+...                 "name_in_movie" : "Neetin Bankar"
+...             },
+...             {
+...                 "actor" : "Sunil Shetty",
+...                 "role" : "hero",
+...                 "skill" : ["Actor","Dancer","comedian"],
+...                 "name_in_movie" : "Ram Mishra"
+...             },
+...             {
+...                 "actor" : "Katrina Kaif",
+...                 "role" : "heroine",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Anjali Kakkad"
+...             }
+...         ],
+...         "review":[
+...             {
+...                 "username" : "user3",
+...                 "review_given" : "Nice"
+...             },
+...             {
+...                 "username" : "user4",
+...                 "review_given" : "Interesting"
+...             }
+...         ]
+...     },
+...     {
+...         "name" : "1920",
+...         "language" : "Hindi",
+...         "year" : 2008,
+...         "stats" : {
+...             "budget" : 7,
+...             "BoxOfficeCollection" : 14.5
+...         },
+...         "genre":["horror","adventure"],
+...         "media":[
+...             {
+...                 "type" : "image",
+...                 "url" : "http://image3.com/"
+...             },
+...             {
+...                 "type" : "video",
+...                 "url" : "http://video3.com/"
+...             }
+...
+...         ],
+...         "cast" : [
+...             {
+...                 "actor" : "Ranjish Doogal",
+...                 "role" : "hero",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Arjun Singh Rathod"
+...             },
+...             {
+...                 "actor" : "Adah Sharma",
+...                 "role" : "heroine",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Anjori Alagh"
+...             }
+...         ],
+...         "review":[
+...             {
+...                 "username" : "user5",
+...                 "review_given" : "Average"
+...             },
+...             {
+...                 "username" : "user6",
+...                 "review_given" : "Below Average"
+...             }
+...         ]
+...     },
+...     {
+...         "name" : "Kuch Kuch Hota Hai",
+...         "language" : "Hindi",
+...         "year" : 1998,
+...         "stats" : {
+...             "budget" : 40,
+...             "BoxOfficeCollection" : 107
+...         },
+...         "genre" : ["romance","drama"],
+...         "media" : [
+...             {
+...                 "type" : "image",
+...                 "url" : "http://image4.com/"
+...             },
+...             {
+...                 "type" : "video",
+...                 "url" : "http://video4.com/"
+...             }
+...
+...         ],
+...         "cast" : [
+...             {
+...                 "actor" : "Shahrukh Khan",
+...                 "role" : "hero",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Rahul Khanna"
+...             },
+...             {
+...                 "actor" : "Kajol",
+...                 "role" : "heroine",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Anjali Sharma"
+...             },
+...             {
+...                 "actor" : "Rani Mukerjee",
+...                 "role" : "heroine",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Tina Khanna"
+...             }
+...         ],
+...         "review":[
+...             {
+...                 "username" : "user7",
+...                 "review_given" : "Outstanding"
+...             },
+...             {
+...                 "username" : "user8",
+...                 "review_given" : "Nice"
+...             }
+...         ]
+...     },
+...     {
+...         "name" : "Krish",
+...         "language" : "Hindi",
+...         "year" : 2006,
+...         "stats" : {
+...             "budget" : 40,
+...             "BoxOfficeCollection" : 126
+...         },
+...         "genre" : ["action","adventure","sci-fi"],
+...         "media" : [
+...             {
+...                 "type" : "image",
+...                 "url" : "http://image5.com/"
+...             },
+...             {
+...                 "type" : "video",
+...                 "url" : "http://video5.com/"
+...             }
+...
+...         ],
+...         "cast" : [
+...             {
+...                 "actor" : "Hritik Roshan",
+...                 "role" : "hero",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Krishna Mehra"
+...             },
+...             {
+...                 "actor" : "Priyanka Chopra",
+...                 "role" : "heroine",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "RPriya Kalliyanan"
+...             },
+...             {
+...                 "actor" : "Nasir Uddin Shah",
+...                 "role" : "Negative",
+...                 "skill" : ["Actor","Dancer"],
+...                 "name_in_movie" : "Dr. Arya"
+...             }
+...         ],
+...         "review":[
+...             {
+...                 "username" : "user9",
+...                 "review_given" : "Excellent"
+...             },
+...             {
+...                 "username" : "user10",
+...                 "review_given":"Good"
+...             }
+...         ]
+...     }
+... ])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("60d967b60d77c5355c793bae"),
+                ObjectId("60d967b60d77c5355c793baf"),
+                ObjectId("60d967b60d77c5355c793bb0"),
+                ObjectId("60d967b60d77c5355c793bb1"),
+                ObjectId("60d967b60d77c5355c793bb2")
+        ]
+}
+> db.films.find().pretty()
+{
+        "_id" : ObjectId("60d967b60d77c5355c793bae"),
+        "name" : "Chennai Express",
+        "language" : "Hindi",
+        "year" : 2013,
+        "stats" : {
+                "budget" : 115,
+                "BoxOfficeCollection" : 423
+        },
+        "genre" : [
+                "action",
+                "comic",
+                "romance"
+        ],
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "http://image1.com/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "http://video1.com/"
+                }
+        ],
+        "cast" : [
+                {
+                        "actor" : "Shahrukh Khan",
+                        "role" : "hero",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Rahul"
+                },
+                {
+                        "actor" : "Deepika Padukone",
+                        "role" : "heroine",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Meenama Lochini Azhagusundaram"
+                }
+        ],
+        "review" : [
+                {
+                        "username" : "user1",
+                        "review_given" : "Excellent"
+                },
+                {
+                        "username" : "user2",
+                        "review_given" : "Good"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d967b60d77c5355c793baf"),
+        "name" : "De Dana Dan",
+        "language" : "Hindi",
+        "year" : 2009,
+        "stats" : {
+                "budget" : 60,
+                "BoxOfficeCollection" : 78
+        },
+        "genre" : [
+                "comic"
+        ],
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "http://image2.com/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "http://video2.com/"
+                }
+        ],
+        "cast" : [
+                {
+                        "actor" : "Akshay Kumar",
+                        "role" : "hero",
+                        "skill" : [
+                                "Actor",
+                                "Dancer",
+                                "comedian"
+                        ],
+                        "name_in_movie" : "Neetin Bankar"
+                },
+                {
+                        "actor" : "Sunil Shetty",
+                        "role" : "hero",
+                        "skill" : [
+                                "Actor",
+                                "Dancer",
+                                "comedian"
+                        ],
+                        "name_in_movie" : "Ram Mishra"
+                },
+                {
+                        "actor" : "Katrina Kaif",
+                        "role" : "heroine",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Anjali Kakkad"
+                }
+        ],
+        "review" : [
+                {
+                        "username" : "user3",
+                        "review_given" : "Nice"
+                },
+                {
+                        "username" : "user4",
+                        "review_given" : "Interesting"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d967b60d77c5355c793bb0"),
+        "name" : "1920",
+        "language" : "Hindi",
+        "year" : 2008,
+        "stats" : {
+                "budget" : 7,
+                "BoxOfficeCollection" : 14.5
+        },
+        "genre" : [
+                "horror",
+                "adventure"
+        ],
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "http://image3.com/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "http://video3.com/"
+                }
+        ],
+        "cast" : [
+                {
+                        "actor" : "Ranjish Doogal",
+                        "role" : "hero",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Arjun Singh Rathod"
+                },
+                {
+                        "actor" : "Adah Sharma",
+                        "role" : "heroine",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Anjori Alagh"
+                }
+        ],
+        "review" : [
+                {
+                        "username" : "user5",
+                        "review_given" : "Average"
+                },
+                {
+                        "username" : "user6",
+                        "review_given" : "Below Average"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d967b60d77c5355c793bb1"),
+        "name" : "Kuch Kuch Hota Hai",
+        "language" : "Hindi",
+        "year" : 1998,
+        "stats" : {
+                "budget" : 40,
+                "BoxOfficeCollection" : 107
+        },
+        "genre" : [
+                "romance",
+                "drama"
+        ],
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "http://image4.com/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "http://video4.com/"
+                }
+        ],
+        "cast" : [
+                {
+                        "actor" : "Shahrukh Khan",
+                        "role" : "hero",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Rahul Khanna"
+                },
+                {
+                        "actor" : "Kajol",
+                        "role" : "heroine",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Anjali Sharma"
+                },
+                {
+                        "actor" : "Rani Mukerjee",
+                        "role" : "heroine",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Tina Khanna"
+                }
+        ],
+        "review" : [
+                {
+                        "username" : "user7",
+                        "review_given" : "Outstanding"
+                },
+                {
+                        "username" : "user8",
+                        "review_given" : "Nice"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d967b60d77c5355c793bb2"),
+        "name" : "Krish",
+        "language" : "Hindi",
+        "year" : 2006,
+        "stats" : {
+                "budget" : 40,
+                "BoxOfficeCollection" : 126
+        },
+        "genre" : [
+                "action",
+                "adventure",
+                "sci-fi"
+        ],
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "http://image5.com/"
+                },
+                {
+                        "type" : "video",
+                        "url" : "http://video5.com/"
+                }
+        ],
+        "cast" : [
+                {
+                        "actor" : "Hritik Roshan",
+                        "role" : "hero",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Krishna Mehra"
+                },
+                {
+                        "actor" : "Priyanka Chopra",
+                        "role" : "heroine",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "RPriya Kalliyanan"
+                },
+                {
+                        "actor" : "Nasir Uddin Shah",
+                        "role" : "Negative",
+                        "skill" : [
+                                "Actor",
+                                "Dancer"
+                        ],
+                        "name_in_movie" : "Dr. Arya"
+                }
+        ],
+        "review" : [
+                {
+                        "username" : "user9",
+                        "review_given" : "Excellent"
+                },
+                {
+                        "username" : "user10",
+                        "review_given" : "Good"
+                }
+        ]
+}
+>
